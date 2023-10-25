@@ -18,6 +18,14 @@ public class BankAccount {
   }
  }
 
+ public String getCustomerId() {
+  return customerId;
+ }
+
+ public String getName() {
+  return customerName;
+ }
+
  void withdraw(double money) {
   if (money != 0 && balance >= money) {
    balance -= money;
